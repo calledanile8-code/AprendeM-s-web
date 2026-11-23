@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprende Más Con Menos</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+
+    <header>
+        <h1>Aprende Más Con Menos</h1>
+        <p>Reforzamiento académico y preparación preuniversitaria económica</p>
+    </header>
+
+    <main>
+        <section class="info-banner">
+            <h2>¿Buscas ingresar a la universidad?</h2>
+            <p>Accede a clases de calidad sin afectar tu economía.</p>
+            <button id="btn-ver-cursos">Ver Cursos Disponibles</button>
+        </section>
+
+        <section id="lista-cursos" class="cursos-grid">
+            <article class="tarjeta">
+                <h3>Matemática Pre</h3>
+                <p>Álgebra, Geometría y Aritmética desde cero.</p>
+                <span>S/ 25.00 / mes</span>
+            </article>
+            <article class="tarjeta">
+                <h3>Razonamiento Verbal</h3>
+                <p>Comprensión lectora y redacción académica.</p>
+                <span>S/ 20.00 / mes</span>
+            </article>
+            <article class="tarjeta">
+                <h3>Física y Química</h3>
+                <p>Resolución de problemas tipo examen de admisión.</p>
+                <span>S/ 25.00 / mes</span>
+            </article>
+        </section>
+
+        <section class="formulario-caja">
+            <h2>Inscríbete a un curso</h2>
+            <form id="form-inscripcion" novalidate>
+                <label for="nombre">Nombre completo:</label>
+                <input type="text" id="nombre" placeholder="Ej. Juan Pérez">
+
+                <label for="correo">Correo electrónico:</label>
+                <input type="email" id="correo" placeholder="ejemplo@correo.com">
+
+                <label for="curso">Curso de interés:</label>
+                <select id="curso">
+                    <option value="">-- Selecciona un curso --</option>
+                    <option value="matematica">Matemática Pre</option>
+                    <option value="verbal">Razonamiento Verbal</option>
+                    <option value="ciencias">Física y Química</option>
+                </select>
+
+                <button type="submit">Enviar Solicitud</button>
+                <p id="mensaje-estado"></p>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Aprende Más Con Menos - Educación accesible para todos</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
